@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>al-Adhkār wa-l-Ādāb — Remembrances &amp; Manners · Study Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;700&family=Amiri:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--sand-50:#f6f6ee;--sand-100:#eceee0;--sand-200:#dde2cb;--sand-300:#c3cda3;--gold:#bf9b30;--gold-dark:#977519;--teal:#1c6b4a;--teal-dark:#0f4730;--ink:#1d231f;--ink-light:#444b45;--ink-muted:#79817a;--white:#fff;--red-accent:#b5524a;--green-accent:#2f8a5a;--card-shadow:0 2px 16px rgba(0,0,0,.06)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--sand-50);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+.ar-font{font-family:'Noto Naskh Arabic','Amiri',serif}
+.hero{background:linear-gradient(135deg,var(--teal-dark),var(--teal) 55%,#2f8a63);color:#fff;padding:4rem 2rem 3rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'بسم الله الرحمن الرحيم';position:absolute;top:1rem;left:50%;transform:translateX(-50%);font-family:'Noto Naskh Arabic',serif;font-size:1rem;opacity:.7;white-space:nowrap}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:6px;background:repeating-linear-gradient(90deg,var(--gold) 0 20px,transparent 20px 24px)}
+.hero h1{font-family:'Noto Naskh Arabic',serif;font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;margin-bottom:.3rem;direction:rtl;text-shadow:0 2px 8px rgba(0,0,0,.15)}
+.hero .subtitle{font-family:'Source Serif 4',serif;font-size:1.1rem;opacity:.92;margin-bottom:.6rem;font-style:italic}
+.hero .book-info{font-size:.85rem;opacity:.75;letter-spacing:.06em;text-transform:uppercase}
+.unit-header{background:var(--teal);color:#fff;padding:2.5rem 2rem;text-align:center}
+.unit-header .unit-number{font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;opacity:.7;margin-bottom:.4rem}
+.unit-header h2{font-family:'Noto Naskh Arabic',serif;font-size:2.6rem;direction:rtl;margin-bottom:.3rem}
+.unit-header .transliteration{font-family:'Source Serif 4',serif;font-style:italic;font-size:1.1rem;opacity:.85}
+.unit-header .translation{font-size:1rem;opacity:.7;margin-top:.2rem}
+.container{max-width:880px;margin:0 auto;padding:0 1.5rem}
+.lesson-nav{background:#fff;border-radius:12px;margin:1.5rem auto;padding:1.2rem 1.5rem;box-shadow:var(--card-shadow)}
+.lesson-nav h4{font-family:'Source Serif 4',serif;font-size:.95rem;color:var(--teal-dark);margin-bottom:.7rem}
+.lesson-chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.lesson-chip{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .75rem;background:var(--sand-50);border:1px solid var(--sand-200);border-radius:20px;font-size:.8rem;color:var(--ink-light);text-decoration:none;transition:.2s}
+.lesson-chip:hover{background:var(--sand-100);border-color:var(--gold);color:var(--teal-dark)}
+.lesson-chip .chip-num{background:var(--gold);color:#fff;font-size:.65rem;font-weight:700;min-width:18px;height:18px;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:0 4px}
+.lesson{margin:2.5rem 0;background:#fff;border-radius:16px;box-shadow:var(--card-shadow);overflow:hidden}
+.lesson-header{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:#fff;padding:1.2rem 1.8rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.lesson-header .lesson-number{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;opacity:.8}
+.lesson-header h3{font-family:'Noto Naskh Arabic',serif;font-size:1.5rem;direction:rtl}
+.lesson-header .lesson-title-en{font-size:.85rem;opacity:.8;font-style:italic}
+.lesson-body{padding:1.8rem}
+.section-label{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);margin-bottom:1rem;padding:.3rem .8rem;background:rgba(28,107,74,.07);border-radius:6px;border-left:3px solid var(--teal)}
+.section-label.gold{color:var(--gold-dark);background:rgba(191,155,48,.08);border-left-color:var(--gold)}
+.note{font-size:.82rem;color:var(--ink-muted);margin-bottom:1rem;font-style:italic}
+.dialogue{margin-bottom:2rem}
+.line{padding:.9rem 1.2rem;border-radius:10px;margin-bottom:.6rem;transition:background .2s}
+.line:nth-child(odd){background:var(--sand-50)}
+.line:hover{background:var(--sand-100)}
+.line .arabic{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.7rem;direction:rtl;text-align:right;color:var(--ink);line-height:2.2}
+.line .speaker{color:var(--teal-dark);font-weight:700}
+.line .translit{font-family:'Source Serif 4',serif;font-style:italic;font-size:.95rem;color:var(--gold-dark);text-align:right;direction:ltr;unicode-bidi:plaintext}
+.line .english{font-size:.9rem;color:var(--ink-muted)}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.8rem;margin-bottom:2rem}
+.vocab-card{background:var(--sand-50);border-radius:10px;padding:1rem 1.2rem;border:1px solid var(--sand-200);transition:.25s}
+.vocab-card:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.06)}
+.vocab-card .ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.8rem;direction:rtl;text-align:right;color:var(--ink);margin-bottom:.2rem;line-height:2}
+.vocab-card .tr{font-family:'Source Serif 4',serif;font-style:italic;font-size:.9rem;color:var(--gold-dark);text-align:right;direction:ltr;unicode-bidi:plaintext}
+.vocab-card .en{font-size:.85rem;color:var(--ink-muted);margin-top:.1rem}
+.grammar-table{width:100%;border-collapse:separate;border-spacing:0;margin:1.2rem 0 2rem;border-radius:10px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,.05)}
+.grammar-table th{background:var(--teal);color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;padding:.8rem 1rem;font-weight:600}
+.grammar-table td{padding:.8rem 1rem;border-bottom:1px solid var(--sand-200);vertical-align:top}
+.grammar-table tr:nth-child(even) td{background:var(--sand-50)}
+.grammar-table .ar-cell{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.45rem;direction:rtl;text-align:right;line-height:2}
+.grammar-table .tr-cell{font-family:'Source Serif 4',serif;font-style:italic;color:var(--gold-dark);font-size:.9rem;text-align:right}
+.grammar-table .en-cell{font-size:.85rem;color:var(--ink-muted)}
+.exercise{background:var(--sand-50);border:1px solid var(--sand-200);border-radius:10px;padding:1.2rem 1.4rem;margin-bottom:1.2rem}
+.exercise-header{font-weight:600;color:var(--teal-dark);margin-bottom:.6rem;font-size:.9rem}
+.exercise-header .ar-label{font-family:'Noto Naskh Arabic',serif;font-size:1.2rem;direction:rtl;display:block;margin-bottom:.15rem}
+.exercise-items{display:flex;flex-direction:column;gap:.5rem}
+.exercise-item{display:grid;grid-template-columns:2rem 1fr;gap:.3rem .5rem;align-items:start;padding:.6rem 0;border-bottom:1px solid var(--sand-100)}
+.exercise-item .num{font-weight:600;color:var(--gold-dark);font-size:.85rem;padding-top:.45rem}
+.exercise-item p{grid-column:2;margin:0}
+.exercise-item .ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.5rem;direction:rtl;text-align:right;line-height:2.05}
+.exercise-item .tr{font-family:'Source Serif 4',serif;font-style:italic;font-size:.85rem;color:var(--gold-dark);text-align:right;direction:ltr;unicode-bidi:plaintext}
+.exercise-item .en{font-size:.82rem;color:var(--ink-muted);grid-column:2}
+.ans-ar{color:var(--teal-dark)!important}
+.ans-ar-false{color:var(--red-accent)!important}
+.passage{background:rgba(28,107,74,.05);border:1px solid var(--sand-200);border-radius:12px;padding:1.4rem 1.6rem;margin-bottom:1.4rem}
+.passage .ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.65rem;direction:rtl;text-align:right;line-height:2.3;color:var(--ink)}
+.passage .tr{font-family:'Source Serif 4',serif;font-style:italic;font-size:.92rem;color:var(--gold-dark);margin-top:.7rem}
+.passage .en{font-size:.88rem;color:var(--ink-muted);margin-top:.4rem}
+.numbers-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem;margin:1rem 0 1.5rem}
+.number-card{text-align:center;background:#fff;border:2px solid var(--sand-200);border-radius:12px;padding:1rem .5rem;transition:.25s}
+.number-card:hover{border-color:var(--teal)}
+.number-card .digit{font-family:'Noto Naskh Arabic',serif;font-size:1.8rem;color:var(--teal-dark)}
+.number-card .ar{font-family:'Noto Naskh Arabic',serif;font-size:1.35rem;direction:rtl;color:var(--ink);margin:.2rem 0}
+.number-card .tr{font-family:'Source Serif 4',serif;font-style:italic;font-size:.8rem;color:var(--gold-dark)}
+.number-card .en{font-size:.75rem;color:var(--ink-muted)}
+.section-divider{border:none;height:1px;background:linear-gradient(90deg,transparent,var(--sand-300),transparent);margin:2rem 0}
+.practice-mode-bar{display:flex;flex-wrap:wrap;gap:.5rem}
+.mode-btn{padding:.55rem 1.1rem;border-radius:25px;border:2px solid var(--sand-200);background:#fff;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:600;color:var(--ink-light);cursor:pointer;transition:.25s;white-space:nowrap}
+.mode-btn:hover{border-color:var(--teal);color:var(--teal-dark)}
+.mode-btn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+.practice-card{background:#fff;border-radius:20px;box-shadow:0 4px 24px rgba(0,0,0,.07);padding:2.5rem 2rem;margin:1.2rem 0;text-align:center;min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.practice-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal),var(--gold))}
+.practice-card .prompt-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--teal);margin-bottom:1rem;font-weight:600;background:rgba(28,107,74,.06);padding:.3rem 1rem;border-radius:20px}
+.practice-card .big-arabic{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:2.9rem;direction:rtl;color:var(--ink);margin-bottom:.6rem;line-height:1.8}
+.practice-card .reveal-area{min-height:65px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:.6rem 0}
+.practice-card .transliteration-answer{font-family:'Source Serif 4',serif;font-style:italic;font-size:1.2rem;color:var(--gold-dark)}
+.practice-card .english-answer{font-size:1.05rem;color:var(--ink-light);margin-top:.25rem;font-weight:500}
+.practice-btn{padding:.75rem 2rem;border-radius:12px;border:none;font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:600;cursor:pointer;transition:.2s;margin:.3rem}
+.practice-btn.primary{background:var(--teal);color:#fff}
+.practice-btn.primary:hover{background:var(--teal-dark)}
+.practice-btn.secondary{background:var(--sand-100);color:var(--ink-light)}
+.practice-btn.success{background:var(--green-accent);color:#fff}
+.practice-btn.danger{background:var(--red-accent);color:#fff;opacity:.85}
+.mc-options{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;width:100%;max-width:520px;margin:1.2rem 0}
+.mc-option{padding:1rem 1.1rem;border-radius:14px;border:2px solid var(--sand-200);background:#fff;cursor:pointer;transition:.25s;text-align:center;font-size:1rem;position:relative}
+.mc-option.ar-text{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.5rem;direction:rtl}
+.mc-option:hover{border-color:var(--teal);transform:translateY(-2px)}
+.mc-option.correct{border-color:var(--green-accent);background:rgba(42,122,58,.1);color:var(--green-accent);font-weight:700}
+.mc-option.correct::after{content:'✓';position:absolute;top:.5rem;right:.7rem;font-size:.9rem}
+.mc-option.wrong{border-color:var(--red-accent);background:rgba(184,50,50,.07);color:var(--red-accent)}
+.mc-option.wrong::after{content:'✗';position:absolute;top:.5rem;right:.7rem;font-size:.9rem}
+.mc-option.disabled{pointer-events:none;opacity:.5}
+.fill-input{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.6rem;direction:rtl;text-align:center;padding:.8rem 1.4rem;border:2px solid var(--sand-200);border-radius:14px;background:var(--sand-50);width:320px;max-width:90%;outline:none;transition:.3s}
+.fill-input:focus{border-color:var(--teal);background:#fff}
+.fill-input.correct{border-color:var(--green-accent)}
+.fill-input.wrong{border-color:var(--red-accent)}
+.score-bar{display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:14px;padding:.9rem 1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.05);margin-bottom:.5rem}
+.score-bar .score-text{font-weight:700;color:var(--teal-dark);font-size:.95rem}
+.score-bar .progress-wrap{flex:1;margin:0 1rem;height:8px;background:var(--sand-200);border-radius:4px;overflow:hidden}
+.score-bar .progress-fill{height:100%;background:linear-gradient(90deg,var(--teal),var(--gold));transition:width .5s}
+.score-bar .counter{font-size:.82rem;color:var(--ink-muted)}
+.float-toggle{position:fixed;bottom:5rem;right:1.5rem;z-index:200;background:#fff;border-radius:20px;box-shadow:0 4px 20px rgba(0,0,0,.18);padding:.5rem .6rem;display:flex;flex-direction:column;gap:.35rem;border:1px solid var(--sand-200)}
+.float-toggle .toggle-label{font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-muted);text-align:center;font-weight:700;padding-bottom:.2rem;border-bottom:1px solid var(--sand-200)}
+.toggle-btn{display:flex;align-items:center;gap:.5rem;padding:.4rem .7rem;border-radius:12px;border:1.5px solid var(--sand-200);background:var(--sand-50);cursor:pointer;font-size:.72rem;font-weight:600;color:var(--ink-light);transition:.2s;font-family:'DM Sans',sans-serif}
+.toggle-btn.on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.toggle-btn .dot{width:8px;height:8px;border-radius:50%;background:currentColor;flex-shrink:0;opacity:.7}
+body.hide-tr .translit,body.hide-tr .tr,body.hide-tr .tr-cell,body.hide-tr .transliteration-answer{display:none!important}
+body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .english-answer{display:none!important}
+.back-top{position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:var(--teal);color:#fff;border:none;cursor:pointer;box-shadow:0 3px 12px rgba(0,0,0,.2);font-size:1.2rem;display:flex;align-items:center;justify-content:center;opacity:0;transition:.3s;z-index:50}
+.back-top.visible{opacity:1}
+.footer{background:var(--teal-dark);color:rgba(255,255,255,.6);text-align:center;padding:1.5rem 2rem;font-size:.8rem;margin-top:3rem}
+@media(max-width:600px){.hero{padding:3rem 1.2rem 2rem}.lesson-body{padding:1.2rem}.vocab-grid{grid-template-columns:1fr 1fr}.line{padding:.7rem .8rem}.line .arabic{font-size:1.45rem}.vocab-card .ar{font-size:1.5rem}.exercise-item .ar{font-size:1.3rem}.passage .ar{font-size:1.4rem}.grammar-table .ar-cell{font-size:1.2rem}.numbers-grid{grid-template-columns:repeat(3,1fr)}.practice-card{padding:2rem 1.2rem;min-height:260px}.practice-card .big-arabic{font-size:2.2rem}.mc-options{grid-template-columns:1fr}.fill-input{width:100%}.float-toggle{bottom:4.5rem;right:1rem}}
+.tabs-stack{position:sticky;top:0;z-index:300;background:rgba(250,248,241,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:2px solid var(--sand-200);box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.unit-tabs,.lesson-tabs{display:flex;gap:.4rem;padding:.55rem 1rem;overflow-x:auto;justify-content:flex-start;scrollbar-width:thin;scrollbar-color:var(--sand-300) transparent}
+.unit-tabs{justify-content:center;border-bottom:1px solid var(--sand-200)}
+.lesson-tabs{padding:.45rem 1rem;background:rgba(243,237,216,.5);min-height:0}
+.lesson-tabs:empty{display:none}
+.unit-tabs::-webkit-scrollbar,.lesson-tabs::-webkit-scrollbar{height:5px}
+.unit-tabs::-webkit-scrollbar-thumb,.lesson-tabs::-webkit-scrollbar-thumb{background:var(--sand-300);border-radius:3px}
+.tab-btn{flex-shrink:0;display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;border-radius:22px;border:2px solid var(--sand-200);background:#fff;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:700;color:var(--ink-light);cursor:pointer;transition:.2s;white-space:nowrap}
+.tab-btn .tab-ar{font-family:'Noto Naskh Arabic',serif;font-size:1rem;font-weight:700}
+.tab-btn:hover{border-color:var(--teal);color:var(--teal-dark)}
+.tab-btn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+.lesson-tab-btn{padding:.35rem .8rem;font-size:.75rem;border-radius:18px;border:1.5px solid var(--sand-200);background:#fff;font-family:'DM Sans',sans-serif;font-weight:600;color:var(--ink-light);cursor:pointer;transition:.2s;white-space:nowrap;flex-shrink:0;display:inline-flex;align-items:center;gap:.35rem}
+.lesson-tab-btn:hover{border-color:var(--gold);color:var(--gold-dark)}
+.lesson-tab-btn.active{background:var(--gold);color:#fff;border-color:var(--gold)}
+.lesson-tab-btn .chip-num{background:rgba(255,255,255,.25);padding:0 .4rem;border-radius:8px;font-size:.65rem;font-weight:800}
+.lesson-tab-btn.active .chip-num{background:rgba(255,255,255,.3)}
+.lesson-tab-btn:not(.active) .chip-num{background:var(--sand-100);color:var(--gold-dark)}
+.unit-panel{display:none}
+.unit-panel.active{display:block;animation:panelIn .35s ease}
+@keyframes panelIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(max-width:600px){.unit-tabs,.lesson-tabs{justify-content:flex-start;padding:.45rem .7rem}.tab-btn{padding:.4rem .8rem;font-size:.75rem}.lesson-tab-btn{padding:.3rem .65rem;font-size:.7rem}}
+.audio-block{background:linear-gradient(135deg,rgba(28,107,74,.06),rgba(191,155,48,.06));border:1px solid var(--sand-200);border-radius:12px;padding:.85rem 1.1rem;margin-bottom:1.3rem}
+.audio-block .audio-label{display:block;font-size:.78rem;color:var(--teal-dark);font-weight:600;margin-bottom:.6rem;font-family:'DM Sans',sans-serif}
+.audio-block .audio-label a{color:var(--gold-dark);text-decoration:none;border-bottom:1px dotted}
+.audio-block .audio-tracks{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.7rem}
+.track-btn{padding:.4rem .85rem;border-radius:18px;border:1.5px solid var(--sand-300);background:#fff;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:600;color:var(--ink-light);cursor:pointer;transition:.2s;white-space:nowrap;display:inline-flex;align-items:center;gap:.35rem}
+.track-btn:hover{border-color:var(--teal);color:var(--teal-dark);background:var(--sand-50)}
+.track-btn.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+.track-btn .track-ar{font-family:'Noto Naskh Arabic',serif}
+.audio-block audio{width:100%;max-width:520px;display:block;border-radius:8px;outline:none}
+.audio-block audio:not([src]){opacity:.5;pointer-events:none}
+@media(max-width:600px){.unit-tabs{justify-content:flex-start;padding:.55rem .7rem}.tab-btn{padding:.45rem .9rem;font-size:.78rem}}
+.unit-tabs{position:static;border-bottom:1px solid var(--sand-200);background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none}
+.lesson-tabs{display:flex;gap:.35rem;padding:.5rem 1rem;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;background:rgba(255,250,240,.7)}
+.lesson-tabs::-webkit-scrollbar{display:none}
+.lesson-tab{flex-shrink:0;display:inline-flex;align-items:center;gap:.3rem;padding:.35rem .75rem;border-radius:18px;border:1.5px solid var(--sand-200);background:#fff;font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:600;color:var(--ink-light);cursor:pointer;transition:.2s;white-space:nowrap;text-decoration:none}
+.lesson-tab .l-num{font-family:'Noto Naskh Arabic',serif;font-size:.85rem;color:var(--gold);font-weight:700}
+.lesson-tab:hover{border-color:var(--gold);color:var(--gold)}
+.lesson-tab.active{background:var(--gold);color:#fff;border-color:var(--gold)}
+.lesson-tab.active .l-num{color:#fff}
+.audio-block .track-bar{display:flex;flex-wrap:wrap;gap:.4rem}
+.audio-block .track-btn{padding:.32rem .8rem;border-radius:14px;border:1.5px solid var(--gold);background:#fff;color:var(--gold);font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:700;cursor:pointer;transition:.2s}
+.audio-block .track-btn .ar{font-family:'Noto Naskh Arabic',serif;font-size:1rem;font-weight:700}
+.audio-block .track-btn:hover{background:#fff4dc}
+.audio-block .track-btn.active{background:var(--gold);color:#fff}
+.audio-block .src-note{font-size:.65rem;color:var(--ink-muted);opacity:.7;text-align:right;font-style:italic}
+@media(max-width:600px){.lesson-tabs{padding:.4rem .6rem}.lesson-tab{padding:.3rem .65rem;font-size:.7rem}.audio-block{padding:.7rem .8rem}.audio-block .track-btn{padding:.28rem .65rem;font-size:.72rem}}
+/* ═══════ ENHANCED COMPONENTS (ported & themed) ═══════ */
+/* Study notes */
+.study-note{position:relative;background:#eef1e8;border:1.5px solid #cdd6bf;border-radius:12px;padding:14px 18px 14px 54px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.study-note::before{content:"📝";position:absolute;left:14px;top:12px;font-size:1.3rem;background:#e0e7d4;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1.5px solid #ccd4c3}
+.study-note .sn-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#7a6320;margin-bottom:5px;display:block}
+.study-note .sn-title{font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:4px;font-family:'Noto Naskh Arabic','Amiri',serif;direction:rtl;text-align:right}
+.study-note .sn-body{font-size:.92rem;color:var(--ink-light);line-height:1.7}
+.study-note .sn-body strong{color:var(--gold-dark)}
+.study-note .sn-body em{font-style:italic;color:var(--teal-dark)}
+.study-note.remember{background:#f4efdc;border-color:var(--gold)}
+.study-note.remember::before{content:"⭐";background:#ece0bf;border-color:var(--gold)}
+.study-note.remember .sn-label{color:var(--gold-dark)}
+.study-note.watch-out{background:#fdf1e7;border-color:#e0a878}
+.study-note.watch-out::before{content:"⚠️";background:#fbe3cf;border-color:#e0a878}
+.study-note.watch-out .sn-label{color:#a86420}
+.study-note.root-tip{background:#e6f0ea;border-color:var(--teal)}
+.study-note.root-tip::before{content:"🌱";background:#d3e6db;border-color:var(--teal)}
+.study-note.root-tip .sn-label{color:var(--teal-dark)}
+.study-note.beginner{background:#eef4f6;border-color:#8fb8c8}
+.study-note.beginner::before{content:"💡";background:#dceaf0;border-color:#8fb8c8}
+.study-note.beginner .sn-label{color:#2f6a82}
+.study-note.lesson{background:linear-gradient(135deg,#f4efdc,#e9f1ea);border-color:var(--gold)}
+.study-note.lesson::before{content:"💎";background:#ece0bf;border-color:var(--gold)}
+.study-note.lesson .sn-label{color:var(--gold-dark)}
+.study-note.lesson .sn-body{color:var(--ink)}
+/* Definition box */
+.defbox{background:var(--white);border:1px solid var(--sand-200);border-radius:12px;overflow:hidden;margin:14px 0;box-shadow:var(--card-shadow)}
+.defbox-tag{background:var(--teal);color:#fff;padding:6px 16px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.defbox-tag.gold{background:var(--gold)}
+.defbox-body{padding:14px 18px}
+.defbox-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.5rem;color:var(--ink);line-height:2;margin-bottom:8px;text-align:right;direction:rtl}
+.defbox-tr{font-family:'Source Serif 4',serif;font-style:italic;color:var(--gold-dark);font-size:.92rem;margin-bottom:6px;direction:ltr;unicode-bidi:plaintext;text-align:right}
+.defbox-en{color:var(--ink-light);font-size:.92rem;line-height:1.65}
+/* Numbered points */
+.point{background:var(--sand-50);border:1px solid var(--sand-200);border-radius:12px;padding:12px 16px;margin:14px 0 8px;display:flex;align-items:flex-start;gap:12px}
+.point-num{background:var(--gold);color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;flex-shrink:0;margin-top:2px}
+.point-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.4rem;font-weight:500;color:var(--ink);direction:rtl;text-align:right;line-height:2}
+.point-tr{font-family:'Source Serif 4',serif;font-style:italic;font-size:.85rem;color:var(--gold-dark);direction:ltr;unicode-bidi:plaintext;text-align:right}
+.point-en{font-size:.9rem;color:var(--ink-light);line-height:1.6;margin-top:2px}
+/* Compare grid */
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.compare-card{border-radius:12px;overflow:hidden;box-shadow:var(--card-shadow);border:1px solid var(--sand-200)}
+.compare-card-head{padding:10px 16px;font-weight:700;font-size:.9rem;color:#fff}
+.compare-card-head.teal{background:var(--teal)}
+.compare-card-head.gold{background:var(--gold)}
+.compare-card-head .ch-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.3rem;display:block;direction:rtl}
+.compare-card-head .ch-tr{font-size:.74rem;opacity:.9;font-style:italic}
+.compare-card-body{background:var(--white)}
+.compare-card-body li{padding:9px 16px;font-size:.88rem;border-bottom:1px solid var(--sand-100);list-style:none;color:var(--ink-light);line-height:1.6}
+.compare-card-body li:last-child{border-bottom:none}
+/* Interactive reveal answers */
+.reveal-controls{display:flex;gap:8px;margin:6px 0 14px;flex-wrap:wrap}
+.btn-reveal-all,.btn-hide-all{background:var(--white);border:1.5px solid var(--teal);color:var(--teal-dark);padding:5px 14px;border-radius:18px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:600;transition:.2s}
+.btn-reveal-all:hover{background:var(--teal);color:#fff}
+.btn-hide-all:hover{background:var(--sand-100)}
+.btn-answer{background:var(--teal);color:#fff;border:none;padding:6px 14px;border-radius:16px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:600;transition:.2s;margin-top:6px}
+.btn-answer.open{background:var(--gold)}
+.answer-box{display:none;background:var(--sand-50);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 8px 8px 0;margin-top:8px;font-size:.92rem;color:var(--ink);line-height:1.7;animation:fadeDown .25s ease}
+.answer-box.open{display:block}
+.exercise-item .btn-answer,.exercise-item .answer-box{grid-column:2;justify-self:start}
+.answer-box .a-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.4rem;direction:rtl;text-align:right;color:var(--teal-dark);line-height:2;display:block;margin-bottom:4px}
+.answer-box .a-ar.false{color:var(--red-accent)}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+/* Flip vocab cards */
+.vflip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:8px 0}
+.vcard{background:var(--white);border:1px solid var(--sand-200);border-left:3px solid var(--sand-300);border-radius:12px;padding:14px 16px 26px;box-shadow:var(--card-shadow);cursor:pointer;position:relative;transition:.2s}
+.vcard:hover{box-shadow:0 6px 18px rgba(0,0,0,.08);transform:translateY(-2px);border-left-color:var(--teal)}
+.vcard.flipped{border-left-color:var(--gold)}
+.vcard .vc-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.7rem;color:var(--ink);font-weight:500;line-height:1.6;direction:rtl;text-align:right;margin-bottom:2px}
+.vcard .vc-tr{font-family:'Source Serif 4',serif;font-style:italic;color:var(--gold-dark);font-size:.82rem;direction:ltr;unicode-bidi:plaintext;text-align:right}
+.vcard .vc-back{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed var(--sand-200)}
+.vcard.flipped .vc-back{display:block}
+.vcard .vc-en{font-size:.9rem;color:var(--ink);font-weight:500}
+.vcard .vc-root{font-size:.8rem;color:var(--ink-muted);margin-top:4px;font-style:italic;direction:rtl;text-align:right}
+.vcard .vc-hint{position:absolute;bottom:8px;right:12px;font-size:.62rem;color:var(--ink-muted)}
+.vcard.flipped .vc-hint{color:var(--gold-dark)}
+.vflip-controls{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 14px;align-items:center}
+.vflip-btn{background:var(--white);border:1.5px solid var(--sand-200);color:var(--ink-light);padding:5px 13px;border-radius:16px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:600;transition:.2s}
+.vflip-btn:hover{border-color:var(--teal);color:var(--teal-dark);background:var(--sand-50)}
+.vflip-count{font-size:.75rem;color:var(--ink-muted);margin-left:auto}
+/* Vocab reference table */
+.vocab-table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;box-shadow:var(--card-shadow);margin:8px 0 14px}
+.vocab-table thead tr{background:var(--teal)}
+.vocab-table thead th{color:#fff;padding:9px 14px;text-align:right;font-size:.78rem;font-weight:600}
+.vocab-table tbody td{padding:9px 14px;border-bottom:1px solid var(--sand-200);font-size:.9rem;vertical-align:top;background:var(--white)}
+.vocab-table tbody tr:nth-child(even) td{background:var(--sand-50)}
+.vocab-table tbody tr:last-child td{border-bottom:none}
+.vtd-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.4rem;color:var(--ink);direction:rtl;text-align:right}
+.vtd-tr{font-family:'Source Serif 4',serif;font-style:italic;color:var(--gold-dark);font-size:.85rem;direction:ltr;unicode-bidi:plaintext}
+.vtd-root{font-family:'Noto Naskh Arabic','Amiri',serif;direction:rtl;color:var(--ink-muted);font-size:1rem}
+.vtd-type{display:inline-block;padding:1px 8px;border-radius:10px;font-size:.66rem;font-weight:700;text-transform:uppercase}
+.vtd-type.noun{background:rgba(28,107,74,.12);color:var(--teal-dark)}
+.vtd-type.verb{background:rgba(191,155,48,.16);color:var(--gold-dark)}
+.vtd-type.particle{background:rgba(122,122,122,.14);color:var(--ink-light)}
+.vtd-type.phrase{background:rgba(184,50,50,.12);color:var(--red-accent)}
+/* Hamburger + drawer */
+.hamburger{position:fixed;top:1rem;left:1rem;z-index:320;background:var(--teal);border:none;cursor:pointer;padding:11px;display:flex;flex-direction:column;gap:4px;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,.2);transition:.2s}
+.hamburger:hover{background:var(--teal-dark)}
+.hamburger span{display:block;width:20px;height:2px;background:#fff;border-radius:1px;transition:.3s}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.drawer-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:330;opacity:0;pointer-events:none;transition:opacity .25s}
+.drawer-backdrop.open{opacity:1;pointer-events:all}
+.drawer{position:fixed;top:0;left:-340px;width:320px;max-width:85vw;height:100vh;background:var(--white);box-shadow:4px 0 24px rgba(0,0,0,.15);z-index:340;transition:left .3s cubic-bezier(.4,0,.2,1);overflow-y:auto;padding:18px 14px}
+.drawer.open{left:0}
+.drawer-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--sand-200)}
+.drawer-title{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.4rem;font-weight:700;color:var(--teal-dark);direction:rtl}
+.drawer-close{background:none;border:none;cursor:pointer;font-size:1.5rem;color:var(--ink-muted);padding:2px 8px;border-radius:6px;line-height:1}
+.drawer-close:hover{background:var(--sand-100);color:var(--ink)}
+.drawer-unit-head{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gold-dark);padding:10px 8px 6px;display:flex;align-items:center;gap:6px}
+.drawer-unit-head .due-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1rem;font-weight:600;color:var(--teal-dark);text-transform:none;letter-spacing:0;margin-left:auto;direction:rtl}
+.drawer-lesson{padding:9px 12px;border-radius:8px;cursor:pointer;transition:.15s;border:1px solid transparent;margin-bottom:3px}
+.drawer-lesson:hover{background:var(--sand-50);border-color:var(--sand-200)}
+.drawer-lesson.active{background:var(--sand-100);border-color:var(--gold)}
+.drawer-lesson .dl-num{font-size:.68rem;font-weight:700;color:var(--gold-dark);text-transform:uppercase;letter-spacing:.06em}
+.drawer-lesson .dl-title{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1rem;color:var(--ink);line-height:1.5;margin-top:2px;direction:rtl;text-align:right}
+.drawer-lesson .dl-en{font-size:.78rem;color:var(--ink-muted);margin-top:1px}
+@media(max-width:600px){.compare-grid{grid-template-columns:1fr}.hamburger{top:.7rem;left:.7rem}.study-note{padding:12px 14px 12px 48px}.vcard .vc-ar{font-size:1.5rem}}
+/* ═══════ DHIKR / HADITH CARD ═══════ */
+.dhikr{background:rgba(28,107,74,.05);border:1px solid var(--sand-200);border-right:4px solid var(--gold);border-radius:12px;padding:14px 18px;margin:14px 0;position:relative}
+.dhikr .num{position:absolute;top:-10px;right:14px;background:var(--teal);color:#fff;font-size:.72rem;font-weight:700;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.dhikr .ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.7rem;direction:rtl;text-align:right;line-height:2.5;color:var(--ink)}
+.dhikr .tr{font-family:'Source Serif 4',serif;font-style:italic;font-size:.92rem;color:var(--gold-dark);margin-top:.7rem;direction:ltr;unicode-bidi:plaintext}
+.dhikr .en{font-size:.92rem;color:var(--ink-light);margin-top:.4rem;line-height:1.65}
+.dhikr .src{margin-top:.7rem;padding-top:.5rem;border-top:1px dashed var(--sand-300);font-size:.8rem;color:var(--gold-dark);font-weight:600;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.3rem}
+.dhikr .src .count{color:var(--teal-dark);background:rgba(28,107,74,.1);padding:1px 9px;border-radius:10px;font-size:.74rem}
+.dhikr .gloss{font-size:.84rem;color:var(--ink-muted);margin-top:.5rem;font-style:italic}
+@media(max-width:600px){.dhikr .ar{font-size:1.42rem;line-height:2.2}}
+</style>
+</head>
+<body>
+<button class="hamburger" id="hamburger" onclick="toggleDrawer()" aria-label="Menu"><span></span><span></span><span></span></button>
+<div class="drawer-backdrop" id="drawerBackdrop" onclick="toggleDrawer()"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-header"><div class="drawer-title">الدُّرُوس · Lessons</div><button class="drawer-close" onclick="toggleDrawer()" aria-label="Close">×</button></div>
+  <div id="drawerBody"></div>
+</aside>
+<header class="hero">
+  <h1>الأَذْكَارُ وَالآدَابُ</h1>
+  <p class="subtitle">Al-Adhkār wa-l-Ādāb — Remembrances &amp; Manners</p>
+  <p class="book-info">Mutūn Ṭālib al-ʿIlm · Stage 1 · compiled by Dr. ʿAbd al-Muḥsin al-Qāsim · PDF-Verified</p>
+</header>
+<div class="tabs-stack">
+<nav class="unit-tabs" id="unitTabs">
+  <button class="tab-btn active" data-tab="u1" onclick="switchTab('u1')"><span class="tab-ar">الفَضَائِل</span> Virtues</button>
+  <button class="tab-btn" data-tab="u2" onclick="switchTab('u2')"><span class="tab-ar">الطَّهَارَة</span> Purification</button>
+  <button class="tab-btn" data-tab="practice" onclick="switchTab('practice')"><span class="tab-ar">تَدْريب</span> Practice</button>
+</nav>
+<nav class="lesson-tabs" id="lessonTabs"></nav>
+</div>
+<div class="unit-panel active" id="panel-u1">
+<section class="unit-header" id="unit1">
+  <p class="unit-number">الفَضَائِلُ — Unit 1</p>
+  <h2>الفَضَائِلُ</h2>
+  <p class="transliteration">Al-Faḍāʾil</p>
+  <p class="translation">Virtues — of seeking knowledge, the Qurʾān &amp; remembrance</p>
+</section>
+<div class="container">
+<!-- ═══════════ ITEM 1 ═══════════ -->
+<article class="lesson" id="l1">
+  <div class="lesson-header"><div>
+    <span class="lesson-number">الفَضَائِلُ · «١»</span>
+    <h3>فَضْلُ طَلَبِ العِلْمِ</h3>
+  </div><span class="lesson-title-en">Item 1 — The Virtue of Seeking Knowledge</span></div>
+  <div class="lesson-body">
+    <span class="section-label">الأَحَادِيثُ — اُنْظُرْ وَاقْرَأْ وَتَدَبَّرْ</span>
+    <p class="note"><em>Workbook p.10 — three hadiths on the merit of seeking knowledge.</em></p>
+    <div class="dhikr"><span class="num">١</span>
+      <p class="ar">«مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا، سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الجَنَّةِ»</p>
+      <p class="tr">«Man salaka ṭarīqan yaltamisu fīhi ʿilman, sahhala-llāhu lahu bihi ṭarīqan ila-l-jannah»</p>
+      <p class="en">"Whoever travels a path seeking knowledge upon it, Allāh makes easy for him by it a path to Paradise."</p>
+      <p class="src"><span>قَالَ النَّبِيُّ ﷺ</span><span class="count">رَوَاهُ مُسْلِم · Muslim</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">The reward is tied to the <strong>journey</strong>, not just the destination. Every step taken toward learning — opening a book, the walk to a class, even the search for a teacher — is itself counted as a step toward Paradise. This reframes the <em>effort</em> of study as worship, so no day of sincere seeking is ever wasted, even one where you feel you grasped little.</div></div>
+    <div class="dhikr"><span class="num">٢</span>
+      <p class="ar">«مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا، يُفَقِّهْهُ فِي الدِّينِ»</p>
+      <p class="tr">«Man yuridi-llāhu bihi khayran, yufaqqih-hu fi-d-dīn»</p>
+      <p class="en">"Whoever Allāh wishes good for, He grants him understanding of the religion."</p>
+      <p class="src"><span>قَالَ النَّبِيُّ ﷺ</span><span class="count">مُتَّفَقٌ عَلَيْه · Bukhārī &amp; Muslim</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">Being granted real <em>fiqh</em> — depth of understanding, not just memorised facts — is named here as a <strong>sign that Allāh wills good for you</strong>. That makes the love of learning a gift to be grateful for, and gives a quiet self-check: a settled aversion to understanding one's religion is something to be concerned about, not normalised.</div></div>
+    <div class="dhikr"><span class="num">٣</span>
+      <p class="ar">«إِذَا مَاتَ الإِنْسَانُ انْقَطَعَ عَنْهُ عَمَلُهُ إِلَّا مِنْ ثَلَاثَةٍ: إِلَّا مِنْ صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ»</p>
+      <p class="tr">«Idhā māta-l-insānu-nqaṭaʿa ʿanhu ʿamaluhu illā min thalāthah: illā min ṣadaqatin jāriyah, aw ʿilmin yuntafaʿu bih, aw waladin ṣāliḥin yadʿū lah»</p>
+      <p class="en">"When a person dies, his deeds come to an end except from three: an ongoing charity, knowledge that is benefited from, or a righteous child who supplicates for him."</p>
+      <p class="src"><span>قَالَ النَّبِيُّ ﷺ</span><span class="count">رَوَاهُ مُسْلِم · Muslim</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">Death closes the ledger of deeds — except for three doors you can prop open <em>now</em>: charity that keeps giving, knowledge others keep using, and a righteous child who keeps praying for you. Teaching, writing, planting, and raising children well are all "ongoing charity." It is an invitation to build things whose reward outlives you.</div></div>
+    <div class="study-note root-tip"><span class="sn-label">🌱 Word root</span><div class="sn-title">سَلَكَ · salaka</div><div class="sn-body">From <strong>س-ل-ك</strong> — to travel, to take a path. The hadith promises that taking the <em>physical and intellectual</em> road of learning is itself a road Allāh smooths toward Paradise. <em>Yaltamis</em> (يَلْتَمِس) = he seeks out, gropes for.</div></div>
+    <hr class="section-divider">
+    <span class="section-label gold">الـمُفْرَدَاتُ — Vocabulary (tap a card to flip)</span>
+    <div class="vflip-controls"><button class="vflip-btn" onclick="flipAllCards(this,true)">Reveal all</button><button class="vflip-btn" onclick="flipAllCards(this,false)">Hide all</button><span class="vflip-count">5 terms</span></div>
+    <div class="vflip-grid">
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">سَلَكَ</p><p class="vc-tr">Salaka</p><div class="vc-back"><p class="vc-en">He travelled / took a path</p><p class="vc-root">الجَذْر: س-ل-ك</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">يَلْتَمِسُ</p><p class="vc-tr">Yaltamis</p><div class="vc-back"><p class="vc-en">He seeks out</p><p class="vc-root">الجَذْر: ل-م-س</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">يُفَقِّهْهُ</p><p class="vc-tr">Yufaqqih-hu</p><div class="vc-back"><p class="vc-en">He grants him understanding</p><p class="vc-root">الجَذْر: ف-ق-ه</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">صَدَقَةٌ جَارِيَةٌ</p><p class="vc-tr">Ṣadaqah jāriyah</p><div class="vc-back"><p class="vc-en">Ongoing charity</p><p class="vc-root">الجَذْر: ص-د-ق / ج-ر-ي</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">يُنْتَفَعُ بِهِ</p><p class="vc-tr">Yuntafaʿu bih</p><div class="vc-back"><p class="vc-en">Benefited from</p><p class="vc-root">الجَذْر: ن-ف-ع</p></div><span class="vc-hint">tap to flip</span></div>
+    </div>
+    <table class="vocab-table">
+      <thead><tr><th>العَرَبِيَّة</th><th>Translit</th><th>Meaning</th><th>Type</th><th>الجَذْر</th></tr></thead>
+      <tbody>
+        <tr><td class="vtd-ar">سَلَكَ</td><td class="vtd-tr">Salaka</td><td>He travelled / took a path</td><td><span class="vtd-type verb">verb</span></td><td class="vtd-root">س-ل-ك</td></tr>
+        <tr><td class="vtd-ar">يَلْتَمِسُ</td><td class="vtd-tr">Yaltamis</td><td>He seeks out</td><td><span class="vtd-type verb">verb</span></td><td class="vtd-root">ل-م-س</td></tr>
+        <tr><td class="vtd-ar">يُفَقِّهْهُ</td><td class="vtd-tr">Yufaqqih-hu</td><td>He grants understanding</td><td><span class="vtd-type verb">verb</span></td><td class="vtd-root">ف-ق-ه</td></tr>
+        <tr><td class="vtd-ar">صَدَقَةٌ جَارِيَةٌ</td><td class="vtd-tr">Ṣadaqah jāriyah</td><td>Ongoing charity</td><td><span class="vtd-type phrase">phrase</span></td><td class="vtd-root">ص-د-ق</td></tr>
+        <tr><td class="vtd-ar">يُنْتَفَعُ بِهِ</td><td class="vtd-tr">Yuntafaʿu bih</td><td>Benefited from</td><td><span class="vtd-type verb">verb</span></td><td class="vtd-root">ن-ف-ع</td></tr>
+      </tbody>
+    </table>
+    <hr class="section-divider">
+    <span class="section-label">تَدَبُّرٌ — Reflection &amp; Self-Test</span>
+    <div class="exercise">
+      <div class="exercise-header">أَجِبْ — Answer:</div>
+      <div class="reveal-controls"><button class="btn-reveal-all" onclick="revealAll(this.closest('.exercise'))">Reveal all</button><button class="btn-hide-all" onclick="hideAll(this.closest('.exercise'))">Hide all</button></div>
+      <div class="exercise-items">
+        <div class="exercise-item"><span class="num">١</span><p class="en">What does Allāh make easy for the one who travels a path seeking knowledge?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الجَنَّةِ</span>A path to Paradise.</div></div>
+        <div class="exercise-item"><span class="num">٢</span><p class="en">Name the three things from which a deceased person still benefits.</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">صَدَقَةٌ جَارِيَةٌ، أَوْ عِلْمٌ يُنْتَفَعُ بِهِ، أَوْ وَلَدٌ صَالِحٌ يَدْعُو لَهُ</span>Ongoing charity, beneficial knowledge, or a righteous child who supplicates for him.</div></div>
+      </div>
+    </div>
+  </div>
+</article>
+<!-- ═══════════ ITEM 2 ═══════════ -->
+<article class="lesson" id="l2">
+  <div class="lesson-header"><div>
+    <span class="lesson-number">الفَضَائِلُ · «٢»</span>
+    <h3>فَضْلُ تَعَلُّمِ القُرْآنِ</h3>
+  </div><span class="lesson-title-en">Item 2 — The Virtue of Learning the Qurʾān</span></div>
+  <div class="lesson-body">
+    <span class="section-label">الأَحَادِيثُ — اُنْظُرْ وَاقْرَأْ وَتَدَبَّرْ</span>
+    <p class="note"><em>Workbook pp.12–13 — three hadiths on the merit of the Qurʾān.</em></p>
+    <div class="dhikr"><span class="num">١</span>
+      <p class="ar">«خَيْرُكُمْ مَنْ تَعَلَّمَ القُرْآنَ وَعَلَّمَهُ»</p>
+      <p class="tr">«Khayrukum man taʿallama-l-qurʾāna wa ʿallamah»</p>
+      <p class="en">"The best of you are those who learn the Qurʾān and teach it."</p>
+      <p class="src"><span>قَالَ النَّبِيُّ ﷺ</span><span class="count">رَوَاهُ البُخَارِيّ · al-Bukhārī</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">Notice the measure of "best": not the most eloquent or wealthy, but the one who <strong>both learns and gives</strong>. Knowledge of the Qurʾān is only complete when it flows onward; hoarding it falls short of the praise. Even teaching one verse to one person places you in this hadith.</div></div>
+    <div class="dhikr"><span class="num">٢</span>
+      <p class="ar">«مَثَلُ الَّذِي يَقْرَأُ القُرْآنَ وَهُوَ حَافِظٌ لَهُ مَعَ السَّفَرَةِ الكِرَامِ البَرَرَةِ. وَمَثَلُ الَّذِي يَقْرَأُ وَهُوَ يَتَعَاهَدُهُ وَهُوَ عَلَيْهِ شَدِيدٌ، فَلَهُ أَجْرَانِ»</p>
+      <p class="tr">«Mathalu-lladhī yaqraʾu-l-qurʾāna wa huwa ḥāfiẓun lahu maʿa-s-safarati-l-kirāmi-l-bararah. Wa mathalu-lladhī yaqraʾu wa huwa yataʿāhaduhu wa huwa ʿalayhi shadīd, fa-lahu ajrān»</p>
+      <p class="en">"The one who recites the Qurʾān and has memorised it is with the noble, righteous scribe-angels. And the one who recites it, persevering at it though it is hard for him, has two rewards."</p>
+      <p class="src"><span>قَالَ النَّبِيُّ ﷺ</span><span class="count">رَوَاهُ البُخَارِيّ · al-Bukhārī</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">A gift for the struggling reader: the fluent memoriser keeps the company of angels, yet the one who <strong>stumbles and perseveres</strong> earns <em>two</em> rewards — one for the recitation, one for the difficulty. So a halting, error-prone recitation is not a lesser worship; the effort itself is separately rewarded. Never let "I'm not good at it" keep you from the Qurʾān.</div></div>
+    <p class="gloss" style="font-size:.84rem;color:var(--ink-muted);font-style:italic">📖 السَّفَرَة the angels · الكِرَام those honoured with Allāh · البَرَرَة those obedient to Allāh · يَتَعَاهَدُهُ he keeps reviewing &amp; perfecting it.</p>
+    <div class="dhikr"><span class="num">٣</span>
+      <p class="ar">«اقْرَؤُوا القُرْآنَ، فَإِنَّهُ يَأْتِي يَوْمَ القِيَامَةِ شَفِيعًا لِأَصْحَابِهِ»</p>
+      <p class="tr">«Iqraʾu-l-qurʾāna, fa-innahu yaʾtī yawma-l-qiyāmati shafīʿan li-aṣḥābih»</p>
+      <p class="en">"Recite the Qurʾān, for it will come on the Day of Resurrection as an intercessor for its companions."</p>
+      <p class="src"><span>قَالَ النَّبِيُّ ﷺ</span><span class="count">رَوَاهُ مُسْلِم · Muslim</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">The relationship is built now, claimed later. The Qurʾān becomes an <strong>intercessor</strong> specifically for "its companions" — those who kept its company through regular recitation. The question it quietly asks: on that Day, will the Qurʾān recognise you as a friend it spent time with?</div></div>
+    <div class="study-note remember"><span class="sn-label">⭐ Two kinds of reciter, both rewarded</span><div class="sn-body">The fluent memoriser is ranked with the angels; the one who <em>struggles</em> through it earns <strong>two rewards</strong> — one for reciting and one for the effort. Difficulty in learning the Qurʾān is never wasted.</div></div>
+    <hr class="section-divider">
+    <span class="section-label gold">الـمُفْرَدَاتُ — Vocabulary (tap a card to flip)</span>
+    <div class="vflip-controls"><button class="vflip-btn" onclick="flipAllCards(this,true)">Reveal all</button><button class="vflip-btn" onclick="flipAllCards(this,false)">Hide all</button><span class="vflip-count">5 terms</span></div>
+    <div class="vflip-grid">
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">السَّفَرَةُ</p><p class="vc-tr">As-safarah</p><div class="vc-back"><p class="vc-en">The (scribe) angels</p><p class="vc-root">الجَذْر: س-ف-ر</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">الكِرَامُ</p><p class="vc-tr">Al-kirām</p><div class="vc-back"><p class="vc-en">The honoured ones</p><p class="vc-root">الجَذْر: ك-ر-م</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">البَرَرَةُ</p><p class="vc-tr">Al-bararah</p><div class="vc-back"><p class="vc-en">The obedient ones</p><p class="vc-root">الجَذْر: ب-ر-ر</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">يَتَعَاهَدُهُ</p><p class="vc-tr">Yataʿāhaduhu</p><div class="vc-back"><p class="vc-en">He keeps reviewing it</p><p class="vc-root">الجَذْر: ع-ه-د</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">شَفِيعٌ</p><p class="vc-tr">Shafīʿ</p><div class="vc-back"><p class="vc-en">An intercessor</p><p class="vc-root">الجَذْر: ش-ف-ع</p></div><span class="vc-hint">tap to flip</span></div>
+    </div>
+    <table class="vocab-table">
+      <thead><tr><th>العَرَبِيَّة</th><th>Translit</th><th>Meaning</th><th>Type</th><th>الجَذْر</th></tr></thead>
+      <tbody>
+        <tr><td class="vtd-ar">السَّفَرَةُ</td><td class="vtd-tr">As-safarah</td><td>The scribe-angels</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">س-ف-ر</td></tr>
+        <tr><td class="vtd-ar">الكِرَامُ</td><td class="vtd-tr">Al-kirām</td><td>The honoured ones</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">ك-ر-م</td></tr>
+        <tr><td class="vtd-ar">البَرَرَةُ</td><td class="vtd-tr">Al-bararah</td><td>The obedient ones</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">ب-ر-ر</td></tr>
+        <tr><td class="vtd-ar">يَتَعَاهَدُهُ</td><td class="vtd-tr">Yataʿāhaduhu</td><td>He keeps reviewing it</td><td><span class="vtd-type verb">verb</span></td><td class="vtd-root">ع-ه-د</td></tr>
+        <tr><td class="vtd-ar">شَفِيعٌ</td><td class="vtd-tr">Shafīʿ</td><td>An intercessor</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">ش-ف-ع</td></tr>
+      </tbody>
+    </table>
+    <hr class="section-divider">
+    <span class="section-label">تَدَبُّرٌ — Reflection &amp; Self-Test</span>
+    <div class="exercise">
+      <div class="exercise-header">أَجِبْ — Answer:</div>
+      <div class="reveal-controls"><button class="btn-reveal-all" onclick="revealAll(this.closest('.exercise'))">Reveal all</button><button class="btn-hide-all" onclick="hideAll(this.closest('.exercise'))">Hide all</button></div>
+      <div class="exercise-items">
+        <div class="exercise-item"><span class="num">١</span><p class="en">Who are described as "the best of you"?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">مَنْ تَعَلَّمَ القُرْآنَ وَعَلَّمَهُ</span>Those who learn the Qurʾān and teach it.</div></div>
+        <div class="exercise-item"><span class="num">٢</span><p class="en">Why does the one who finds recitation hard earn two rewards?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">أَجْرٌ لِلْقِرَاءَةِ وَأَجْرٌ لِمَشَقَّتِهِ وَمُعَانَاتِهِ</span>One reward for the recitation and one for his effort and perseverance.</div></div>
+        <div class="exercise-item"><span class="num">٣</span><p class="en">What will the Qurʾān be on the Day of Resurrection for its companions?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">شَفِيعًا لِأَصْحَابِهِ</span>An intercessor for its companions.</div></div>
+      </div>
+    </div>
+  </div>
+</article>
+<!-- ═══════════ ITEM 3 ═══════════ -->
+<article class="lesson" id="l3">
+  <div class="lesson-header"><div>
+    <span class="lesson-number">الفَضَائِلُ · «٣»</span>
+    <h3>فَضْلُ الذِّكْرِ</h3>
+  </div><span class="lesson-title-en">Item 3 — The Virtue of Remembrance (Dhikr)</span></div>
+  <div class="lesson-body">
+    <span class="section-label">الأَحَادِيثُ — اُنْظُرْ وَاقْرَأْ وَتَدَبَّرْ</span>
+    <p class="note"><em>Workbook pp.14–15 — three hadiths on the merit of remembering Allāh.</em></p>
+    <div class="dhikr"><span class="num">١</span>
+      <p class="ar">«مَثَلُ الَّذِي يَذْكُرُ رَبَّهُ وَالَّذِي لَا يَذْكُرُ رَبَّهُ، مَثَلُ الحَيِّ وَالمَيِّتِ»</p>
+      <p class="tr">«Mathalu-lladhī yadhkuru rabbahu wa-lladhī lā yadhkuru rabbah, mathalu-l-ḥayyi wa-l-mayyit»</p>
+      <p class="en">"The likeness of the one who remembers his Lord and the one who does not is like the likeness of the living and the dead."</p>
+      <p class="src"><span>قَالَ النَّبِيُّ ﷺ</span><span class="count">مُتَّفَقٌ عَلَيْه · Bukhārī &amp; Muslim</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">Dhikr is presented not as an optional extra but as the very <strong>pulse of a living heart</strong>. A person can be biologically alive yet spiritually inert; remembrance is what keeps the heart awake to Allāh. The remedy for a heavy, distracted heart is rarely complicated — it is to start the tongue and mind moving in His remembrance again.</div></div>
+    <div class="dhikr"><span class="num">٢</span>
+      <p class="ar">«يَقُولُ اللَّهُ تَعَالَى: أَنَا عِنْدَ ظَنِّ عَبْدِي بِي، وَأَنَا مَعَهُ إِذَا ذَكَرَنِي. فَإِنْ ذَكَرَنِي فِي نَفْسِهِ ذَكَرْتُهُ فِي نَفْسِي. وَإِنْ ذَكَرَنِي فِي مَلَأٍ ذَكَرْتُهُ فِي مَلَأٍ خَيْرٍ مِنْهُمْ»</p>
+      <p class="tr">«Yaqūlu-llāhu taʿālā: Anā ʿinda ẓanni ʿabdī bī, wa anā maʿahu idhā dhakaranī. Fa-in dhakaranī fī nafsihi dhakartuhu fī nafsī. Wa in dhakaranī fī malaʾin dhakartuhu fī malaʾin khayrin minhum»</p>
+      <p class="en">"Allāh the Most High says: I am as My servant thinks of Me, and I am with him when he remembers Me. If he remembers Me within himself, I remember him within Myself; and if he remembers Me in a gathering, I remember him in a gathering better than it."</p>
+      <p class="src"><span>حَدِيثٌ قُدْسِيّ — قَالَ النَّبِيُّ ﷺ</span><span class="count">مُتَّفَقٌ عَلَيْه · Bukhārī &amp; Muslim</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">Two life-changing principles in one ḥadīth. First: <strong>think well of Allāh</strong> — expect His mercy, forgiveness, and response, and you meet Him as you expected. Second: remembrance is <em>reciprocated and upgraded</em> — remember Him privately and He remembers you; remember Him before people and He mentions you before the angels, a gathering "better than it." Your small dhikr is answered with something greater.</div></div>
+    <div class="dhikr"><span class="num">٣</span>
+      <p class="ar">«سَبَقَ المُفَرِّدُونَ»، قَالُوا: وَمَا المُفَرِّدُونَ يَا رَسُولَ اللَّهِ؟ قَالَ: «الذَّاكِرُونَ اللَّهَ كَثِيرًا وَالذَّاكِرَاتُ»</p>
+      <p class="tr">«Sabaqa-l-mufarridūn», qālū: wa ma-l-mufarridūna yā rasūla-llāh? Qāl: «Adh-dhākirūna-llāha kathīran wa-dh-dhākirāt»</p>
+      <p class="en">"The mufarridūn have gone ahead." They asked: "And who are the mufarridūn, O Messenger of Allāh?" He said: "The men and women who remember Allāh abundantly."</p>
+      <p class="src"><span>قَالَ النَّبِيُّ ﷺ</span><span class="count">رَوَاهُ مُسْلِم · Muslim</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">There is a quiet race to Allāh, and its frontrunners are not the most famous or accomplished — they are those, men <em>and</em> women alike, who simply <strong>remember Allāh a great deal</strong>. It is a wonderfully accessible kind of greatness: available on a commute, in a queue, while doing chores. Abundance of dhikr is how anyone can "go ahead."</div></div>
+    <div class="study-note beginner"><span class="sn-label">💡 "I am as My servant thinks of Me"</span><div class="sn-body">This ḥadīth qudsī invites you to hold a <strong>good opinion of Allāh</strong> — to expect His mercy and acceptance. And remembrance is reciprocal: remember Him quietly, He remembers you; remember Him among people, He mentions you among a <em>better</em> assembly (the angels).</div></div>
+    <hr class="section-divider">
+    <span class="section-label gold">الـمُفْرَدَاتُ — Vocabulary (tap a card to flip)</span>
+    <div class="vflip-controls"><button class="vflip-btn" onclick="flipAllCards(this,true)">Reveal all</button><button class="vflip-btn" onclick="flipAllCards(this,false)">Hide all</button><span class="vflip-count">5 terms</span></div>
+    <div class="vflip-grid">
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">الذِّكْرُ</p><p class="vc-tr">Adh-dhikr</p><div class="vc-back"><p class="vc-en">Remembrance of Allāh</p><p class="vc-root">الجَذْر: ذ-ك-ر</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">ظَنُّ العَبْدِ</p><p class="vc-tr">Ẓannu-l-ʿabd</p><div class="vc-back"><p class="vc-en">The servant's expectation/opinion</p><p class="vc-root">الجَذْر: ظ-ن-ن</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">مَلَأٌ</p><p class="vc-tr">Malaʾ</p><div class="vc-back"><p class="vc-en">A gathering / assembly</p><p class="vc-root">الجَذْر: م-ل-أ</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">المُفَرِّدُونَ</p><p class="vc-tr">Al-mufarridūn</p><div class="vc-back"><p class="vc-en">Those absorbed in much remembrance</p><p class="vc-root">الجَذْر: ف-ر-د</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">الذَّاكِرُونَ</p><p class="vc-tr">Adh-dhākirūn</p><div class="vc-back"><p class="vc-en">Those who remember (Allāh)</p><p class="vc-root">الجَذْر: ذ-ك-ر</p></div><span class="vc-hint">tap to flip</span></div>
+    </div>
+    <table class="vocab-table">
+      <thead><tr><th>العَرَبِيَّة</th><th>Translit</th><th>Meaning</th><th>Type</th><th>الجَذْر</th></tr></thead>
+      <tbody>
+        <tr><td class="vtd-ar">الذِّكْرُ</td><td class="vtd-tr">Adh-dhikr</td><td>Remembrance of Allāh</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">ذ-ك-ر</td></tr>
+        <tr><td class="vtd-ar">ظَنٌّ</td><td class="vtd-tr">Ẓann</td><td>Expectation / opinion</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">ظ-ن-ن</td></tr>
+        <tr><td class="vtd-ar">مَلَأٌ</td><td class="vtd-tr">Malaʾ</td><td>A gathering / assembly</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">م-ل-أ</td></tr>
+        <tr><td class="vtd-ar">المُفَرِّدُونَ</td><td class="vtd-tr">Al-mufarridūn</td><td>Those absorbed in remembrance</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">ف-ر-د</td></tr>
+        <tr><td class="vtd-ar">الذَّاكِرُونَ</td><td class="vtd-tr">Adh-dhākirūn</td><td>Those who remember Allāh</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">ذ-ك-ر</td></tr>
+      </tbody>
+    </table>
+    <hr class="section-divider">
+    <span class="section-label">تَدَبُّرٌ — Reflection &amp; Self-Test</span>
+    <div class="exercise">
+      <div class="exercise-header">أَجِبْ — Answer:</div>
+      <div class="reveal-controls"><button class="btn-reveal-all" onclick="revealAll(this.closest('.exercise'))">Reveal all</button><button class="btn-hide-all" onclick="hideAll(this.closest('.exercise'))">Hide all</button></div>
+      <div class="exercise-items">
+        <div class="exercise-item"><span class="num">١</span><p class="en">To what does the hadith compare the one who remembers Allāh versus the one who does not?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">مَثَلُ الحَيِّ وَالمَيِّتِ</span>The likeness of the living and the dead.</div></div>
+        <div class="exercise-item"><span class="num">٢</span><p class="en">Who are "the mufarridūn" the Prophet ﷺ said have gone ahead?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">الذَّاكِرُونَ اللَّهَ كَثِيرًا وَالذَّاكِرَاتُ</span>The men and women who remember Allāh abundantly.</div></div>
+      </div>
+    </div>
+  </div>
+</article>
+<!-- ═══════════ ITEM 4 ═══════════ -->
+<article class="lesson" id="l4">
+  <div class="lesson-header"><div>
+    <span class="lesson-number">الفَضَائِلُ · «٤»</span>
+    <h3>فَضْلُ مَجَالِسِ الذِّكْرِ</h3>
+  </div><span class="lesson-title-en">Item 4 — The Virtue of Gatherings of Remembrance</span></div>
+  <div class="lesson-body">
+    <span class="section-label">الحَدِيثُ — اُنْظُرْ وَاقْرَأْ وَتَدَبَّرْ</span>
+    <p class="note"><em>Workbook p.16 — the reward of those who gather to recite and study the Qurʾān.</em></p>
+    <div class="dhikr"><span class="num">١</span>
+      <p class="ar">«وَمَا اجْتَمَعَ قَوْمٌ فِي بَيْتٍ مِنْ بُيُوتِ اللَّهِ، يَتْلُونَ كِتَابَ اللَّهِ، وَيَتَدَارَسُونَهُ بَيْنَهُمْ، إِلَّا نَزَلَتْ عَلَيْهِمُ السَّكِينَةُ، وَغَشِيَتْهُمُ الرَّحْمَةُ، وَحَفَّتْهُمُ المَلَائِكَةُ، وَذَكَرَهُمُ اللَّهُ فِيمَنْ عِنْدَهُ»</p>
+      <p class="tr">«Wa ma-jtamaʿa qawmun fī baytin min buyūti-llāh, yatlūna kitāba-llāh, wa yatadārasūnahu baynahum, illā nazalat ʿalayhimu-s-sakīnah, wa ghashiyat-humu-r-raḥmah, wa ḥaffat-humu-l-malāʾikah, wa dhakarahumu-llāhu fī man ʿindah»</p>
+      <p class="en">"No people gather in one of the houses of Allāh, reciting the Book of Allāh and studying it together, except that tranquillity descends upon them, mercy envelops them, the angels surround them, and Allāh mentions them to those (angels) who are with Him."</p>
+      <p class="src"><span>قَالَ النَّبِيُّ ﷺ</span><span class="count">رَوَاهُ مُسْلِم · Muslim</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">This is the strongest encouragement to never study alone-by-default. A circle of Qurʾān draws down <strong>four descending gifts at once</strong> — calm, mercy, encircling angels, and Allāh's mention of you on high. The lesson is practical: prioritise gatherings of learning and remembrance; what you "gain" there is far more than information.</div></div>
+    <p class="gloss" style="font-size:.84rem;color:var(--ink-muted);font-style:italic">📖 السَّكِينَة = calm &amp; dignity (aṭ-ṭumaʾnīnah wa-l-waqār) · غَشِيَتْهُم = it covered them · حَفَّتْهُم = they encircled them.</p>
+    <div class="study-note remember"><span class="sn-label">⭐ Four gifts at every circle of knowledge</span><div class="sn-body">Notice the four things promised to a study-circle of the Qurʾān: <strong>tranquillity descends, mercy covers, angels surround, and Allāh mentions them above.</strong> A single ḥadīth — and a complete encouragement to attend gatherings of remembrance and learning.</div></div>
+    <hr class="section-divider">
+    <span class="section-label gold">الـمُفْرَدَاتُ — Vocabulary (tap a card to flip)</span>
+    <div class="vflip-controls"><button class="vflip-btn" onclick="flipAllCards(this,true)">Reveal all</button><button class="vflip-btn" onclick="flipAllCards(this,false)">Hide all</button><span class="vflip-count">5 terms</span></div>
+    <div class="vflip-grid">
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">يَتَدَارَسُونَهُ</p><p class="vc-tr">Yatadārasūnahu</p><div class="vc-back"><p class="vc-en">They study it together</p><p class="vc-root">الجَذْر: د-ر-س</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">السَّكِينَةُ</p><p class="vc-tr">As-sakīnah</p><div class="vc-back"><p class="vc-en">Tranquillity / calm dignity</p><p class="vc-root">الجَذْر: س-ك-ن</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">غَشِيَتْهُمُ</p><p class="vc-tr">Ghashiyat-humu</p><div class="vc-back"><p class="vc-en">It enveloped them</p><p class="vc-root">الجَذْر: غ-ش-ي</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">حَفَّتْهُمُ</p><p class="vc-tr">Ḥaffat-humu</p><div class="vc-back"><p class="vc-en">They (angels) surrounded them</p><p class="vc-root">الجَذْر: ح-ف-ف</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">المَلَائِكَةُ</p><p class="vc-tr">Al-malāʾikah</p><div class="vc-back"><p class="vc-en">The angels</p><p class="vc-root">الجَذْر: م-ل-ك</p></div><span class="vc-hint">tap to flip</span></div>
+    </div>
+    <table class="vocab-table">
+      <thead><tr><th>العَرَبِيَّة</th><th>Translit</th><th>Meaning</th><th>Type</th><th>الجَذْر</th></tr></thead>
+      <tbody>
+        <tr><td class="vtd-ar">يَتَدَارَسُونَهُ</td><td class="vtd-tr">Yatadārasūnahu</td><td>They study it together</td><td><span class="vtd-type verb">verb</span></td><td class="vtd-root">د-ر-س</td></tr>
+        <tr><td class="vtd-ar">السَّكِينَةُ</td><td class="vtd-tr">As-sakīnah</td><td>Tranquillity</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">س-ك-ن</td></tr>
+        <tr><td class="vtd-ar">غَشِيَتْهُمُ</td><td class="vtd-tr">Ghashiyat-humu</td><td>It enveloped them</td><td><span class="vtd-type verb">verb</span></td><td class="vtd-root">غ-ش-ي</td></tr>
+        <tr><td class="vtd-ar">حَفَّتْهُمُ</td><td class="vtd-tr">Ḥaffat-humu</td><td>They surrounded them</td><td><span class="vtd-type verb">verb</span></td><td class="vtd-root">ح-ف-ف</td></tr>
+        <tr><td class="vtd-ar">المَلَائِكَةُ</td><td class="vtd-tr">Al-malāʾikah</td><td>The angels</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">م-ل-ك</td></tr>
+      </tbody>
+    </table>
+    <hr class="section-divider">
+    <span class="section-label">تَدَبُّرٌ — Reflection &amp; Self-Test</span>
+    <div class="exercise">
+      <div class="exercise-header">أَجِبْ — Answer:</div>
+      <div class="reveal-controls"><button class="btn-reveal-all" onclick="revealAll(this.closest('.exercise'))">Reveal all</button><button class="btn-hide-all" onclick="hideAll(this.closest('.exercise'))">Hide all</button></div>
+      <div class="exercise-items">
+        <div class="exercise-item"><span class="num">١</span><p class="en">Name the four things that come to a gathering reciting and studying the Qurʾān.</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">تَنْزِلُ السَّكِينَةُ، وَتَغْشَاهُمُ الرَّحْمَةُ، وَتَحُفُّهُمُ المَلَائِكَةُ، وَيَذْكُرُهُمُ اللَّهُ فِيمَنْ عِنْدَهُ</span>Tranquillity descends, mercy envelops them, the angels surround them, and Allāh mentions them to those with Him.</div></div>
+        <div class="exercise-item"><span class="num">٢</span><p class="en">What does "as-sakīnah" mean here?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">الطُّمَأْنِينَةُ وَالوَقَارُ</span>Calmness and dignity.</div></div>
+      </div>
+    </div>
+  </div>
+</article>
+<!--END-U1-->
+</div><!-- /container -->
+</div>
+<div class="unit-panel" id="panel-u2">
+<section class="unit-header" id="unit2">
+  <p class="unit-number">قِسْمُ الأَذْكَار · الطَّهَارَة — Unit 2</p>
+  <h2>أَذْكَارُ الطَّهَارَةِ</h2>
+  <p class="transliteration">Adhkāru ṭ-Ṭahārah</p>
+  <p class="translation">Remembrances of Purification — entering &amp; leaving the privy, and after wuḍūʾ</p>
+</section>
+<div class="container">
+<!-- ═══════════ ITEM 5 ═══════════ -->
+<article class="lesson" id="l5">
+  <div class="lesson-header"><div>
+    <span class="lesson-number">الطَّهَارَة · «٥»</span>
+    <h3>دُخُولُ الخَلَاءِ</h3>
+  </div><span class="lesson-title-en">Item 5 — Entering the Privy</span></div>
+  <div class="lesson-body">
+    <span class="section-label">الذِّكْرُ — اِحْفَظْ وَاعْمَلْ</span>
+    <p class="note"><em>Workbook p.20 — what the Prophet ﷺ said upon entering the place of relieving oneself.</em></p>
+    <div class="dhikr"><span class="num">٥</span>
+      <p class="ar">«اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الخُبُثِ وَالخَبَائِثِ»</p>
+      <p class="tr">«Allāhumma innī aʿūdhu bika mina-l-khubuthi wa-l-khabāʾith»</p>
+      <p class="en">"O Allāh, I seek refuge in You from the male devils and the female devils."</p>
+      <p class="src"><span>كَانَ النَّبِيُّ ﷺ إِذَا دَخَلَ الخَلَاءَ قَالَ</span><span class="count">مُتَّفَقٌ عَلَيْه · Bukhārī &amp; Muslim</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">Islam sanctifies even the most mundane, exposed moments. The privy is a place where one's ʿawrah is uncovered and devils linger; so the believer crosses its threshold under Allāh's protection. The principle is bigger than the bathroom: <strong>begin every vulnerable moment by seeking refuge in Allāh</strong>, and no part of your day is left outside His remembrance.</div></div>
+    <p class="gloss" style="font-size:.84rem;color:var(--ink-muted);font-style:italic">📖 الخُبُث = the male devils · الخَبَائِث = the female devils · يُقَالُ عِنْدَ إِرَادَةِ دُخُولِ مَكَانِ قَضَاءِ الحَاجَةِ (said when about to enter).</p>
+    <div class="study-note beginner"><span class="sn-label">💡 Why seek refuge here?</span><div class="sn-body">The privy is a place where the shayāṭīn are present. The Prophet ﷺ taught us to enter under Allāh's protection — a reminder that even our most ordinary, private moments begin with remembrance of Him.</div></div>
+    <hr class="section-divider">
+    <span class="section-label gold">الـمُفْرَدَاتُ — Vocabulary (tap a card to flip)</span>
+    <div class="vflip-controls"><button class="vflip-btn" onclick="flipAllCards(this,true)">Reveal all</button><button class="vflip-btn" onclick="flipAllCards(this,false)">Hide all</button><span class="vflip-count">4 terms</span></div>
+    <div class="vflip-grid">
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">الخَلَاءُ</p><p class="vc-tr">Al-khalāʾ</p><div class="vc-back"><p class="vc-en">The privy / lavatory</p><p class="vc-root">الجَذْر: خ-ل-و</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">أَعُوذُ بِكَ</p><p class="vc-tr">Aʿūdhu bika</p><div class="vc-back"><p class="vc-en">I seek refuge in You</p><p class="vc-root">الجَذْر: ع-و-ذ</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">الخُبُثُ</p><p class="vc-tr">Al-khubuth</p><div class="vc-back"><p class="vc-en">The male devils</p><p class="vc-root">الجَذْر: خ-ب-ث</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">الخَبَائِثُ</p><p class="vc-tr">Al-khabāʾith</p><div class="vc-back"><p class="vc-en">The female devils</p><p class="vc-root">الجَذْر: خ-ب-ث</p></div><span class="vc-hint">tap to flip</span></div>
+    </div>
+    <table class="vocab-table">
+      <thead><tr><th>العَرَبِيَّة</th><th>Translit</th><th>Meaning</th><th>Type</th><th>الجَذْر</th></tr></thead>
+      <tbody>
+        <tr><td class="vtd-ar">الخَلَاءُ</td><td class="vtd-tr">Al-khalāʾ</td><td>The privy</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">خ-ل-و</td></tr>
+        <tr><td class="vtd-ar">أَعُوذُ بِكَ</td><td class="vtd-tr">Aʿūdhu bika</td><td>I seek refuge in You</td><td><span class="vtd-type verb">verb</span></td><td class="vtd-root">ع-و-ذ</td></tr>
+        <tr><td class="vtd-ar">الخُبُثُ</td><td class="vtd-tr">Al-khubuth</td><td>Male devils</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">خ-ب-ث</td></tr>
+        <tr><td class="vtd-ar">الخَبَائِثُ</td><td class="vtd-tr">Al-khabāʾith</td><td>Female devils</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">خ-ب-ث</td></tr>
+      </tbody>
+    </table>
+    <hr class="section-divider">
+    <span class="section-label">تَدَبُّرٌ — Reflection &amp; Self-Test</span>
+    <div class="exercise">
+      <div class="exercise-header">أَجِبْ — Answer:</div>
+      <div class="reveal-controls"><button class="btn-reveal-all" onclick="revealAll(this.closest('.exercise'))">Reveal all</button><button class="btn-hide-all" onclick="hideAll(this.closest('.exercise'))">Hide all</button></div>
+      <div class="exercise-items">
+        <div class="exercise-item"><span class="num">١</span><p class="en">From what does this duʿāʾ seek refuge?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">مِنَ الخُبُثِ وَالخَبَائِثِ — ذُكْرَانِ الشَّيَاطِينِ وَإِنَاثِهِم</span>From the male and female devils.</div></div>
+        <div class="exercise-item"><span class="num">٢</span><p class="en">When is it said?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">عِنْدَ إِرَادَةِ دُخُولِ الخَلَاءِ</span>When intending to enter the privy.</div></div>
+      </div>
+    </div>
+  </div>
+</article>
+<!-- ═══════════ ITEM 6 ═══════════ -->
+<article class="lesson" id="l6">
+  <div class="lesson-header"><div>
+    <span class="lesson-number">الطَّهَارَة · «٦»</span>
+    <h3>الخُرُوجُ مِنَ الخَلَاءِ</h3>
+  </div><span class="lesson-title-en">Item 6 — Leaving the Privy</span></div>
+  <div class="lesson-body">
+    <span class="section-label">الذِّكْرُ — اِحْفَظْ وَاعْمَلْ</span>
+    <p class="note"><em>Workbook p.21 — what the Prophet ﷺ said upon leaving.</em></p>
+    <div class="dhikr"><span class="num">٦</span>
+      <p class="ar">«غُفْرَانَكَ»</p>
+      <p class="tr">«Ghufrānak»</p>
+      <p class="en">"(I seek) Your forgiveness." (i.e. "O Allāh, forgive me.")</p>
+      <p class="src"><span>كَانَ النَّبِيُّ ﷺ إِذَا خَرَجَ مِنَ الغَائِطِ قَالَ</span><span class="count">رَوَاهُ أَحْمَد · Aḥmad</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">A beautiful turn of the heart: having just been relieved of bodily discomfort, the believer's first thought is to seek relief from the burden of <strong>sin</strong>. Some scholars add that one asks forgiveness for the lapse in remembering Allāh while inside. The deeper habit it trains is <em>gratitude that immediately becomes humility</em> — every relief is a reminder of the Reliever.</div></div>
+    <div class="study-note root-tip"><span class="sn-label">🌱 Word root</span><div class="sn-title">غُفْرَانَك · ghufrānak</div><div class="sn-body">From <strong>غ-ف-ر</strong> — to forgive, to cover. The meaning is "O Allāh, forgive me." Scholars note its beauty: having just been relieved of bodily harm, the believer turns to ask to be relieved of the harm of <em>sin</em>.</div></div>
+    <hr class="section-divider">
+    <span class="section-label gold">الـمُفْرَدَاتُ — Vocabulary (tap a card to flip)</span>
+    <div class="vflip-controls"><button class="vflip-btn" onclick="flipAllCards(this,true)">Reveal all</button><button class="vflip-btn" onclick="flipAllCards(this,false)">Hide all</button><span class="vflip-count">2 terms</span></div>
+    <div class="vflip-grid">
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">غُفْرَانَكَ</p><p class="vc-tr">Ghufrānak</p><div class="vc-back"><p class="vc-en">(I seek) Your forgiveness</p><p class="vc-root">الجَذْر: غ-ف-ر</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">الغَائِطُ</p><p class="vc-tr">Al-ghāʾiṭ</p><div class="vc-back"><p class="vc-en">The privy / place of relief</p><p class="vc-root">الجَذْر: غ-و-ط</p></div><span class="vc-hint">tap to flip</span></div>
+    </div>
+    <table class="vocab-table">
+      <thead><tr><th>العَرَبِيَّة</th><th>Translit</th><th>Meaning</th><th>Type</th><th>الجَذْر</th></tr></thead>
+      <tbody>
+        <tr><td class="vtd-ar">غُفْرَانَكَ</td><td class="vtd-tr">Ghufrānak</td><td>(I seek) Your forgiveness</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">غ-ف-ر</td></tr>
+        <tr><td class="vtd-ar">الغَائِطُ</td><td class="vtd-tr">Al-ghāʾiṭ</td><td>The privy</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">غ-و-ط</td></tr>
+      </tbody>
+    </table>
+    <hr class="section-divider">
+    <span class="section-label">تَدَبُّرٌ — Reflection &amp; Self-Test</span>
+    <div class="exercise">
+      <div class="exercise-header">أَجِبْ — Answer:</div>
+      <div class="reveal-controls"><button class="btn-reveal-all" onclick="revealAll(this.closest('.exercise'))">Reveal all</button><button class="btn-hide-all" onclick="hideAll(this.closest('.exercise'))">Hide all</button></div>
+      <div class="exercise-items">
+        <div class="exercise-item"><span class="num">١</span><p class="en">What is the meaning of "ghufrānak"?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">اللَّهُمَّ اغْفِرْ لِي</span>"O Allāh, forgive me."</div></div>
+      </div>
+    </div>
+  </div>
+</article>
+<!-- ═══════════ ITEM 7 ═══════════ -->
+<article class="lesson" id="l7">
+  <div class="lesson-header"><div>
+    <span class="lesson-number">الطَّهَارَة · «٧»</span>
+    <h3>إِذَا فَرَغَ مِنَ الوُضُوءِ</h3>
+  </div><span class="lesson-title-en">Item 7 — After Completing Wuḍūʾ</span></div>
+  <div class="lesson-body">
+    <span class="section-label">الذِّكْرُ — اِحْفَظْ وَاعْمَلْ</span>
+    <p class="note"><em>Workbook p.22 — the testimony said after a thorough wuḍūʾ, and its reward.</em></p>
+    <div class="dhikr"><span class="num">٧</span>
+      <p class="ar">«مَا مِنْكُمْ مِنْ أَحَدٍ يَتَوَضَّأُ، فَيُبْلِغُ - أَوْ: فَيُسْبِغُ - الوُضُوءَ، ثُمَّ يَقُولُ: أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ، وَأَنَّ مُحَمَّدًا عَبْدُ اللَّهِ وَرَسُولُهُ. إِلَّا فُتِحَتْ لَهُ أَبْوَابُ الجَنَّةِ الثَّمَانِيَةُ، يَدْخُلُ مِنْ أَيِّهَا شَاءَ»</p>
+      <p class="tr">«Mā minkum min aḥadin yatawaḍḍaʾu, fa-yublighu — aw: fa-yusbighu — l-wuḍūʾa, thumma yaqūl: ashhadu an lā ilāha illa-llāh, wa anna Muḥammadan ʿabdu-llāhi wa rasūluh. Illā futiḥat lahu abwābu-l-jannati-th-thamāniyah, yadkhulu min ayyihā shāʾ»</p>
+      <p class="en">"There is none among you who performs wuḍūʾ thoroughly and then says: 'I bear witness that none has the right to be worshipped but Allāh, and that Muḥammad is His servant and Messenger,' except that the eight gates of Paradise are opened for him to enter through whichever he wishes."</p>
+      <p class="src"><span>قَالَ النَّبِيُّ ﷺ</span><span class="count">رَوَاهُ مُسْلِم · Muslim</span></p>
+    </div>
+    <div class="study-note lesson"><span class="sn-label">💎 الفَائِدَة · Deeper lesson</span><div class="sn-body">Two small habits, an enormous return. <strong>Completing wuḍūʾ properly</strong> (not rushing past the heels and elbows) and then sealing it with the shahādah opens <em>all eight</em> gates of Paradise — you choose your entrance. The lesson: the everyday acts we treat as routine are, when done with care and presence, among the heaviest deeds on the scale.</div></div>
+    <p class="gloss" style="font-size:.84rem;color:var(--ink-muted);font-style:italic">📖 يُسْبِغُ الوُضُوءَ = he completes it in the most perfect manner.</p>
+    <div class="study-note remember"><span class="sn-label">⭐ Eight gates for a few words</span><div class="sn-body">A complete wuḍūʾ followed by the shahādah opens <strong>all eight gates of Paradise</strong>. Never rush wuḍūʾ, and never skip this short testimony afterward — it is among the easiest, weightiest deeds.</div></div>
+    <hr class="section-divider">
+    <span class="section-label gold">الـمُفْرَدَاتُ — Vocabulary (tap a card to flip)</span>
+    <div class="vflip-controls"><button class="vflip-btn" onclick="flipAllCards(this,true)">Reveal all</button><button class="vflip-btn" onclick="flipAllCards(this,false)">Hide all</button><span class="vflip-count">3 terms</span></div>
+    <div class="vflip-grid">
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">يُسْبِغُ</p><p class="vc-tr">Yusbigh</p><div class="vc-back"><p class="vc-en">He completes (wuḍūʾ) thoroughly</p><p class="vc-root">الجَذْر: س-ب-غ</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">أَشْهَدُ</p><p class="vc-tr">Ashhadu</p><div class="vc-back"><p class="vc-en">I bear witness</p><p class="vc-root">الجَذْر: ش-ه-د</p></div><span class="vc-hint">tap to flip</span></div>
+      <div class="vcard" onclick="flipCard(this)"><p class="vc-ar">أَبْوَابُ الجَنَّةِ الثَّمَانِيَةُ</p><p class="vc-tr">Abwābu-l-jannati-th-thamāniyah</p><div class="vc-back"><p class="vc-en">The eight gates of Paradise</p><p class="vc-root">الجَذْر: ب-و-ب / ث-م-ن</p></div><span class="vc-hint">tap to flip</span></div>
+    </div>
+    <table class="vocab-table">
+      <thead><tr><th>العَرَبِيَّة</th><th>Translit</th><th>Meaning</th><th>Type</th><th>الجَذْر</th></tr></thead>
+      <tbody>
+        <tr><td class="vtd-ar">يُسْبِغُ</td><td class="vtd-tr">Yusbigh</td><td>Completes wuḍūʾ thoroughly</td><td><span class="vtd-type verb">verb</span></td><td class="vtd-root">س-ب-غ</td></tr>
+        <tr><td class="vtd-ar">أَشْهَدُ</td><td class="vtd-tr">Ashhadu</td><td>I bear witness</td><td><span class="vtd-type verb">verb</span></td><td class="vtd-root">ش-ه-د</td></tr>
+        <tr><td class="vtd-ar">الثَّمَانِيَةُ</td><td class="vtd-tr">Ath-thamāniyah</td><td>The eight</td><td><span class="vtd-type noun">noun</span></td><td class="vtd-root">ث-م-ن</td></tr>
+      </tbody>
+    </table>
+    <hr class="section-divider">
+    <span class="section-label">تَدَبُّرٌ — Reflection &amp; Self-Test</span>
+    <div class="exercise">
+      <div class="exercise-header">أَجِبْ — Answer:</div>
+      <div class="reveal-controls"><button class="btn-reveal-all" onclick="revealAll(this.closest('.exercise'))">Reveal all</button><button class="btn-hide-all" onclick="hideAll(this.closest('.exercise'))">Hide all</button></div>
+      <div class="exercise-items">
+        <div class="exercise-item"><span class="num">١</span><p class="en">What two conditions earn the opening of the eight gates?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">إِسْبَاغُ الوُضُوءِ، ثُمَّ قَوْلُ الشَّهَادَتَيْنِ</span>Performing wuḍūʾ thoroughly, then saying the two testimonies.</div></div>
+        <div class="exercise-item"><span class="num">٢</span><p class="en">What is the reward?</p><button class="btn-answer" onclick="toggleAnswer(this)">👁 Show answer</button><div class="answer-box"><span class="a-ar">فُتِحَتْ لَهُ أَبْوَابُ الجَنَّةِ الثَّمَانِيَةُ يَدْخُلُ مِنْ أَيِّهَا شَاءَ</span>The eight gates of Paradise are opened for him to enter through whichever he wishes.</div></div>
+      </div>
+    </div>
+  </div>
+</article>
+</div><!-- /container -->
+</div>
+<div class="unit-panel" id="panel-practice">
+<div class="container">
+<article class="lesson" id="practice">
+  <div class="lesson-header" style="background:linear-gradient(135deg,var(--teal),var(--gold))"><div>
+    <span class="lesson-number">تَدْريبٌ تَفاعُلِيٌّ — Interactive Practice</span><h3>راجِعِ الـمُفْرَداتِ</h3>
+  </div><span class="lesson-title-en">Review Vocabulary · choose a deck</span></div>
+  <div class="lesson-body">
+    <div class="practice-mode-bar" style="margin-bottom:.8rem">
+      <button class="mode-btn deck-btn active" data-deck="u1" onclick="setDeck('u1')">Virtues</button>
+      <button class="mode-btn deck-btn" data-deck="u2" onclick="setDeck('u2')">Purification</button>
+      <button class="mode-btn deck-btn" data-deck="all" onclick="setDeck('all')">All</button>
+    </div>
+    <div class="score-bar">
+      <span class="score-text" id="scoreText">Score: 0</span>
+      <div class="progress-wrap"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+      <span class="counter" id="counterText">0 / 0</span>
+    </div>
+    <div class="practice-mode-bar">
+      <button class="mode-btn mode-sel active" data-mode="flash" onclick="setMode('flash')">🃏 Flashcards</button>
+      <button class="mode-btn mode-sel" data-mode="ar-en" onclick="setMode('ar-en')">🇸🇦 → 🇬🇧 Arabic to English</button>
+      <button class="mode-btn mode-sel" data-mode="en-ar" onclick="setMode('en-ar')">🇬🇧 → 🇸🇦 English to Arabic</button>
+      <button class="mode-btn mode-sel" data-mode="fill" onclick="setMode('fill')">⌨️ Type the Arabic</button>
+    </div>
+    <div class="practice-card" id="practiceCard"></div>
+    <div style="text-align:center"><button class="practice-btn secondary" onclick="resetDeck()">↺ Restart Deck</button></div>
+  </div>
+</article>
+</div><!-- /container -->
+</div>
+<div class="float-toggle">
+  <span class="toggle-label">Show / Hide</span>
+  <button class="toggle-btn on" id="trToggle" onclick="toggleTr()"><span class="dot"></span>Translit</button>
+  <button class="toggle-btn on" id="enToggle" onclick="toggleEn()"><span class="dot"></span>English</button>
+</div>
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<footer class="footer">الأَذْكَارُ وَالآدَابُ · al-Adhkār wa-l-Ādāb (Stage 1) — Study Guide · Verified against the textbook PDF · Made with ❤️ by @themeowslimah</footer>
+<script>
+const decks={
+u1:[
+ {ar:'طَلَبُ العِلْم',tr:'Ṭalabu-l-ʿilm',en:'Seeking knowledge'},
+ {ar:'صَدَقَةٌ جَارِيَةٌ',tr:'Ṣadaqah jāriyah',en:'Ongoing charity'},
+ {ar:'السَّفَرَة',tr:'As-safarah',en:'The (noble scribe) angels'},
+ {ar:'البَرَرَة',tr:'Al-bararah',en:'The obedient (angels)'},
+ {ar:'شَفِيع',tr:'Shafīʿ',en:'An intercessor'},
+ {ar:'يَتَعَاهَدُهُ',tr:'Yataʿāhaduhu',en:'He keeps reviewing it'},
+ {ar:'المُفَرِّدُونَ',tr:'Al-mufarridūn',en:'Those devoted to much remembrance'},
+ {ar:'السَّكِينَة',tr:'As-sakīnah',en:'Tranquillity'},
+ {ar:'غَشِيَتْهُم',tr:'Ghashiyat-hum',en:'It enveloped them'},
+ {ar:'حَفَّتْهُمُ المَلَائِكَة',tr:'Ḥaffat-humu-l-malāʾikah',en:'The angels surrounded them'}
+],
+u2:[
+ {ar:'الخَلَاء',tr:'Al-khalāʾ',en:'The privy / lavatory'},
+ {ar:'أَعُوذُ بِكَ',tr:'Aʿūdhu bika',en:'I seek refuge in You'},
+ {ar:'الخُبُث',tr:'Al-khubuth',en:'The male devils'},
+ {ar:'الخَبَائِث',tr:'Al-khabāʾith',en:'The female devils'},
+ {ar:'غُفْرَانَك',tr:'Ghufrānak',en:'(I seek) Your forgiveness'},
+ {ar:'الغَائِط',tr:'Al-ghāʾiṭ',en:'The privy / place of relief'},
+ {ar:'يُسْبِغُ الوُضُوء',tr:'Yusbighu-l-wuḍūʾ',en:'He completes wuḍūʾ thoroughly'},
+ {ar:'أَبْوَابُ الجَنَّةِ الثَّمَانِيَة',tr:'Abwābu-l-jannati-th-thamāniyah',en:'The eight gates of Paradise'}
+]
+};
+decks.all=[...decks.u1,...decks.u2];
+let deckKey='u1',deck=decks.u1,mode='flash',order=[],idx=0,score=0,answered=false;
+const card=document.getElementById('practiceCard');
+const bare=s=>s.replace(/[ً-ْٰـ]/g,'').replace(/\s+/g,' ').trim();
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function setDeck(k){deckKey=k;deck=decks[k];document.querySelectorAll('.deck-btn').forEach(b=>b.classList.toggle('active',b.dataset.deck===k));resetDeck()}
+function setMode(m){mode=m;document.querySelectorAll('.mode-sel').forEach(b=>b.classList.toggle('active',b.dataset.mode===m));resetDeck()}
+function resetDeck(){order=shuffle([...deck.keys()]);idx=0;score=0;answered=false;updateBar();render()}
+function updateBar(){document.getElementById('scoreText').textContent='Score: '+score;document.getElementById('counterText').textContent=idx+' / '+deck.length;document.getElementById('progressFill').style.width=(deck.length?idx/deck.length*100:0)+'%'}
+function next(){idx++;answered=false;updateBar();render()}
+function options(correct,key){const opts=[deck[correct][key]];const pool=shuffle([...deck.keys()].filter(i=>i!==correct));for(const p of pool){if(opts.length>=4)break;const v=deck[p][key];if(!opts.includes(v))opts.push(v)}return shuffle(opts)}
+function render(){
+ if(idx>=deck.length){card.innerHTML='<p class="prompt-label">Deck complete — ما شاء الله!</p><p class="big-arabic">أَحْسَنْتَ!</p><p class="english-answer">Final score: '+score+' / '+deck.length+'</p><button class="practice-btn primary" onclick="resetDeck()">Practice Again</button>';return}
+ const w=deck[order[idx]];
+ if(mode==='flash'){
+  card.innerHTML='<p class="prompt-label">Card '+(idx+1)+' of '+deck.length+'</p><p class="big-arabic">'+w.ar+'</p><div class="reveal-area" id="rev"></div><div><button class="practice-btn primary" id="revBtn" onclick="reveal()">Reveal</button><button class="practice-btn secondary" onclick="next()">Next →</button></div>';
+ }else if(mode==='ar-en'){
+  const opts=options(order[idx],'en');
+  card.innerHTML='<p class="prompt-label">What does this mean?</p><p class="big-arabic">'+w.ar+'</p><div class="mc-options">'+opts.map(o=>'<div class="mc-option" data-v="'+o.replace(/"/g,'&quot;')+'" onclick="pick(this)">'+o+'</div>').join('')+'</div>';
+  card.dataset.correct=w.en;
+ }else if(mode==='en-ar'){
+  const opts=options(order[idx],'ar');
+  card.innerHTML='<p class="prompt-label">Which is the Arabic for…</p><p class="english-answer" style="font-size:1.3rem;margin-bottom:.5rem">'+w.en+'</p><div class="mc-options">'+opts.map(o=>'<div class="mc-option ar-text" data-v="'+o+'" onclick="pick(this)">'+o+'</div>').join('')+'</div>';
+  card.dataset.correct=w.ar;
+ }else{
+  card.innerHTML='<p class="prompt-label">Type the Arabic (harakat optional)</p><p class="english-answer" style="font-size:1.25rem">'+w.en+'</p><p class="transliteration-answer">'+w.tr+'</p><input class="fill-input" id="fillIn" dir="rtl" autocomplete="off" onkeydown="if(event.key===\'Enter\')checkFill()"><div style="margin-top:.8rem"><button class="practice-btn primary" onclick="checkFill()">Check</button><button class="practice-btn secondary" onclick="giveUp()">Show Answer</button></div><div class="reveal-area" id="rev"></div>';
+  setTimeout(()=>{const f=document.getElementById('fillIn');if(f)f.focus()},50);
+ }
+}
+function reveal(){const w=deck[order[idx]];const r=document.getElementById('rev');if(r&&!answered){r.innerHTML='<p class="transliteration-answer">'+w.tr+'</p><p class="english-answer">'+w.en+'</p>';answered=true;score++;updateBar();const b=document.getElementById('revBtn');if(b)b.style.display='none'}}
+function pick(el){if(answered)return;answered=true;const correct=card.dataset.correct;document.querySelectorAll('.mc-option').forEach(o=>{o.classList.add('disabled');if(o.dataset.v===correct)o.classList.add('correct')});if(el.dataset.v===correct){score++;updateBar()}else{el.classList.remove('disabled');el.classList.add('wrong')}setTimeout(next,1300)}
+function checkFill(){if(answered)return;const w=deck[order[idx]];const f=document.getElementById('fillIn');if(!f)return;const ok=bare(f.value)===bare(w.ar);answered=true;f.classList.add(ok?'correct':'wrong');const r=document.getElementById('rev');r.innerHTML=(ok?'<p class="english-answer" style="color:var(--green-accent);font-weight:700">✓ Correct!</p>':'<p class="english-answer" style="color:var(--red-accent)">✗ Answer:</p>')+'<p class="transliteration-answer" style="font-family:\'Noto Naskh Arabic\',serif;font-style:normal;font-size:1.8rem;direction:rtl">'+w.ar+'</p>';if(ok){score++;updateBar()}setTimeout(next,1500)}
+function giveUp(){if(answered)return;answered=true;const w=deck[order[idx]];const r=document.getElementById('rev');r.innerHTML='<p class="transliteration-answer" style="font-family:\'Noto Naskh Arabic\',serif;font-style:normal;font-size:1.8rem;direction:rtl">'+w.ar+'</p>';setTimeout(next,1600)}
+function toggleTr(){document.body.classList.toggle('hide-tr');document.getElementById('trToggle').classList.toggle('on')}
+function toggleEn(){document.body.classList.toggle('hide-en');document.getElementById('enToggle').classList.toggle('on')}
+/* Interactive reveal answers */
+function toggleAnswer(btn){const box=btn.nextElementSibling;const open=box.classList.toggle('open');btn.classList.toggle('open',open);btn.textContent=open?'✓ Hide answer':'👁 Show answer';}
+function revealAll(el){if(!el)return;el.querySelectorAll('.btn-answer').forEach(b=>{b.nextElementSibling.classList.add('open');b.classList.add('open');b.textContent='✓ Hide answer';});}
+function hideAll(el){if(!el)return;el.querySelectorAll('.btn-answer').forEach(b=>{b.nextElementSibling.classList.remove('open');b.classList.remove('open');b.textContent='👁 Show answer';});}
+/* Flip vocab cards */
+function flipCard(el){const f=el.classList.toggle('flipped');const h=el.querySelector('.vc-hint');if(h)h.textContent=f?'tap to hide':'tap to flip';}
+function flipAllCards(btn,open){const body=btn.closest('.lesson-body');if(!body)return;const grid=body.querySelector('.vflip-grid');if(!grid)return;grid.querySelectorAll('.vcard').forEach(c=>{c.classList.toggle('flipped',open);const h=c.querySelector('.vc-hint');if(h)h.textContent=open?'tap to hide':'tap to flip';});}
+/* Side drawer */
+const unitMeta={u1:{ar:'الفَضَائِل',en:'Unit 1 · Virtues'},u2:{ar:'الطَّهَارَة',en:'Unit 2 · Purification'},practice:{ar:'تَدْريب',en:'Practice'}};
+function renderDrawer(){
+  const body=document.getElementById('drawerBody');if(!body)return;
+  const cur=location.hash.slice(1);let h='';
+  Object.entries(lessonsByUnit).forEach(([u,lessons])=>{
+    const meta=unitMeta[u]||{ar:'',en:u};
+    if(u==='practice')return;
+    h+='<div class="drawer-unit-head">'+meta.en+'<span class="due-ar">'+meta.ar+'</span></div>';
+    lessons.forEach(([id,num,label])=>{h+='<div class="drawer-lesson'+(cur===id?' active':'')+'" onclick="drawerGo(\''+u+'\',\''+id+'\')"><div class="dl-title">'+label+'</div></div>';});
+  });
+  h+='<div class="drawer-unit-head">'+unitMeta.practice.en+'<span class="due-ar">'+unitMeta.practice.ar+'</span></div>';
+  h+='<div class="drawer-lesson'+(cur==='practice'?' active':'')+'" onclick="drawerGo(\'practice\',\'practice\')"><div class="dl-title">تَدْريبٌ تَفاعُلِيّ</div><div class="dl-en">Interactive Practice</div></div>';
+  body.innerHTML=h;
+}
+function drawerGo(u,id){if(id==='practice'){switchTab('practice');}else{switchTab(u,id);}history.replaceState(null,'','#'+id);toggleDrawer();}
+function toggleDrawer(){const d=document.getElementById('drawer'),b=document.getElementById('drawerBackdrop'),hb=document.getElementById('hamburger');const open=d.classList.toggle('open');b.classList.toggle('open',open);hb.classList.toggle('open',open);if(open)renderDrawer();}
+window.addEventListener('scroll',()=>{document.getElementById('backTop').classList.toggle('visible',window.scrollY>600)});
+const lessonsByUnit={
+ u1:[['l1','١','فَضْلُ طَلَبِ العِلْم'],['l2','٢','فَضْلُ تَعَلُّمِ القُرْآن'],['l3','٣','فَضْلُ الذِّكْر'],['l4','٤','فَضْلُ مَجَالِسِ الذِّكْر']],
+ u2:[['l5','٥','دُخُولُ الخَلَاء'],['l6','٦','الخُرُوجُ مِنَ الخَلَاء'],['l7','٧','إِذَا فَرَغَ مِنَ الوُضُوء']],
+ practice:[]
+};
+const anchorToTab={};
+Object.entries(lessonsByUnit).forEach(([u,lessons])=>{lessons.forEach(([id])=>anchorToTab[id]=u)});
+['unit1','unit2'].forEach((u,i)=>anchorToTab[u]=['u1','u2'][i]);
+anchorToTab['practice']='practice';
+function renderLessonTabs(unitKey){
+  const bar=document.getElementById('lessonTabs');
+  if(!bar)return;
+  const list=lessonsByUnit[unitKey]||[];
+  if(list.length===0){bar.style.display='none';return}
+  bar.style.display='flex';
+  bar.innerHTML=list.map(([id,num,label])=>'<a href="#'+id+'" class="lesson-tab" data-l="'+id+'"><span class="l-num">'+num+'</span>'+label+'</a>').join('');
+}
+function highlightLessonTab(id){
+  document.querySelectorAll('.lesson-tab').forEach(t=>t.classList.toggle('active',t.dataset.l===id));
+}
+function switchTab(k,anchor){
+  document.querySelectorAll('.unit-panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+k));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active',b.dataset.tab===k));
+  renderLessonTabs(k);
+  if(anchor){const el=document.getElementById(anchor);if(el){setTimeout(()=>{el.scrollIntoView({behavior:'smooth',block:'start'});highlightLessonTab(anchor)},80);return}}
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href^="#"]');if(!a)return;
+  const id=a.getAttribute('href').slice(1);const t=anchorToTab[id];
+  if(t){e.preventDefault();switchTab(t,id);history.replaceState(null,'','#'+id);}
+});
+renderLessonTabs('u1');
+(function(){const id=location.hash.slice(1);if(id&&anchorToTab[id]){switchTab(anchorToTab[id],['unit1','unit2','practice'].includes(id)?null:id);}})();
+resetDeck();
+</script>
+</body>
+</html>
